@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rapidd_tech/features/webView/webview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,30 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () {},
-            child: Text("Data"),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class First extends StatelessWidget {
-  const First({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: ListView(
-        children: [
-
-        ],
-      ),
+      home: WebViewWithProgress(),
+      // home: Scaffold(
+      //   body: Center(
+      //     child: ElevatedButton(
+      //       onPressed: () {},
+      //       child: Text("Data"),
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
